@@ -6,7 +6,10 @@ RUN apt-get update && \
 RUN wget -qO- https://github.com/inconshreveable/ngrok/releases | grep tar.gz| awk -F "\"" '{print $2;exit}' |wget -i - -B https://github.com -O /ngrok.tar.gz
 RUN tar zxvf /ngrok.tar.gz; rm /ngrok.tar.gz; mv /ngrok-* /ngrok
 
-ADD *.sh /; chmod a+x /*.sh
+ADD run-server.sh /
+ADD build.sh /
+ADD build_all.sh /
+RUN chmod a+x /build.sh /build_all.sh /run-server.sh
 
 ENV TLS_KEY **None**
 ENV TLS_CERT **None**
