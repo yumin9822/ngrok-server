@@ -1,7 +1,5 @@
 # ngrok-server for Docker
 
-============
-
 ## Pre-running environmental
 Run the below commands in your host machine, Replace the "example.com" with your own domain.
 ```
