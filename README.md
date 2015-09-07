@@ -45,7 +45,6 @@ The server and client binaries are located in the folder /ngrok/bin in the docke
 ```
 
 ## Environment Variables
----------------------
 
     TLS_CERT        TLS cert file for setting up tls connection (such as: server.crt)
     TLS_KEY         TLS key file for setting up tls connection (such as: server.key)
